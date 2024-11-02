@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+h3{
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Center the inputs and button horizontally */
+  }
+.textbox{
+    width: 300px;             /* Equal width for both input fields */
+    padding: 10px;            /* Add some padding for better readability */
+    margin-bottom: 10px;      /* Space between inputs */
+    font-size: 16px;          /* Border style */ 
+    
+}
+.submit-btn{
+    padding: 10px;
+    color: white;              /* Button text color */
+    border: none;              /* Remove default border */
+    cursor: pointer;
+    font-size: 15px;
+}

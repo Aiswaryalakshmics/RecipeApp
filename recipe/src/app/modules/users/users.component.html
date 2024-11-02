@@ -1,0 +1,15 @@
+<div class="row user-page">
+    <div class="coloumn-left col-3" style="background-color: aqua;">
+        <div class="img-sec">
+            <img class="img-picture" (click)="onImageClick()" [src]='imgUrl' alt="picture">
+            <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
+        </div>
+    </div>
+    <div class="coloumn-middle col-6" style="background-color: rgb(43, 190, 190);">
+        <div class="search-container">
+            <input type="text" placeholder="Search a food" [(ngModel)]="term" />
+            <i class="fas fa-search"></i>
+        </div> 
+    </div>
+    <div class="coloumn-right col-3" style="background-color: rgb(53, 139, 139);"></div>
+</div>

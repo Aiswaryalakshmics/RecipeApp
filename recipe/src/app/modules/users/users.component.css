@@ -1,0 +1,45 @@
+.user-page{
+  padding: 0;
+  height: 100vh;
+}
+.coloumn-left,.coloumnright{
+  padding: 20px;
+  width: 25%;
+  }
+.coloumn-middle{
+  width: 50%;
+}
+.search-container {
+    width: 40%;
+    margin: 6px;
+}
+  
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+  
+.search-container i {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0f0f0f;
+  }
+.img-sec{
+  margin-top: 10%;
+  margin-left: 20%
+}
+.img-picture{
+ border-radius: 50%;
+ cursor: pointer;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .user-page {
+      flex-direction: column; /* Stack the columns on small screens */
+  }
+  
+}

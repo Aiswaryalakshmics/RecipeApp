@@ -1,0 +1,71 @@
+<div>
+  <div class="main">
+    <h3>Create An Account</h3> 
+    <form (ngSubmit)="onSubmit(signUpForm)" #signUpForm="ngForm" action="">
+        <div class="textbox">
+            <label for="name">Name : </label>
+            <input required type="text" id="name" [(ngModel)]="name" name="text"> 
+        </div>
+        <div class="textbox">
+            <label for="email">Email : </label>
+            <input required type="text" id="email" [(ngModel)]="email" name="email "> 
+        </div>
+        <div class="textbox">
+            <label for="password">Password : </label>
+            <input type="password" id="password"  [(ngModel)]="password" name="password"> 
+        </div>
+        <button class="submit-btn" mat-raised-button color="primary">Submit</button>
+        <div class="textbox">
+            <span>Already have an account ?
+            <a routerLink="/login">sign In</a></span>
+        </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="main">
+  <form class="form-class"  [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <div>
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" required />
+          <mat-error *ngIf="signUpForm.get('username')?.hasError('required')">
+            Username is required
+          </mat-error>
+        </mat-form-field> 
+      </div>
+    
+     <div>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" required />
+          <mat-error *ngIf="signUpForm.get('email')?.hasError('required')">
+            Email is required
+          </mat-error>
+          <mat-error *ngIf="signUpForm.get('email')?.hasError('email')">
+            Enter a valid email
+          </mat-error>
+        </mat-form-field>
+     </div>
+    
+     <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" required />
+          <mat-error *ngIf="signUpForm.get('password')?.hasError('required')">
+            Password is required
+          </mat-error>
+          <mat-error *ngIf="signUpForm.get('password')?.hasError('minlength')">
+            Password must be at least 8 characters long
+          </mat-error>
+        </mat-form-field>
+     </div>
+    <div class="button-group"> 
+      <button mat-raised-button color="primary" type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+    </div>
+  </form>  
+</div> -->
+
